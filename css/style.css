@@ -62,6 +62,10 @@ img {
     align-items: center;
 }
 
+.header.portfolio {
+    border-bottom: 1px solid rgba(236, 236, 236, 1)
+}
+
 .header-container>.logo {
     margin-right: 90px;
 }
@@ -195,6 +199,7 @@ color: var(--tx-blue-cl);
     width: 200px;
     height: 50px;
     border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* features */
@@ -242,6 +247,7 @@ color: var(--tx-blue-cl);
 
 .team {
     background-color: var(--bg-sec-cl);
+    padding-top: var(--mg-bot-sec);
 }
 
 .about-title, .team-title {
@@ -267,6 +273,32 @@ color: var(--tx-blue-cl);
     margin-right: 0;
 }
 
+.team-list {
+    display: flex;
+    margin-bottom: var(--mg-bot-sec);
+}
+
+.team-list>li {
+    margin-right: var(--mg-rt-li);
+}
+
+.team-list>li:last-child {
+    margin-right: 0;
+}
+
+.team-member-list {
+    background-color: var(--bg-main-cl);
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-member {
     color: var(--tx-sec-cl);
     font-weight: 500;
@@ -274,6 +306,9 @@ color: var(--tx-blue-cl);
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .member-prof {
@@ -287,14 +322,19 @@ color: var(--tx-blue-cl);
 /* footer */
 .footer {
     background-color: var(--bg-foot-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: block;
 }
 
-.address {
+.footer-container>.logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+address {
     font-style: normal;
-}
-
-.footer-address, .footer-contact {
-    color: var(--tx-white-cl);
+    color: rgba(255, 255, 255, 1);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -302,13 +342,41 @@ color: var(--tx-blue-cl);
 
 .footer-contact {
     color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
+
+.address-info>p {
+    margin-bottom: 6px;
+}
+
+.contact-item {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
 
 .footer-contact:hover {
     color: var(--tx-blue-cl);
 }
 
 /* portfolio */
+
+.container.portfolio {
+    margin-bottom: 94px;
+}
+
+.portfolio-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
 
 .portfolio-btn {
     background-color: var(--bg-sec-cl);
@@ -320,6 +388,10 @@ color: var(--tx-blue-cl);
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+
+    border-radius: 4px;
+    margin-right: 8px;
+    border: 0ch;
 }
 
 .portfolio-btn:hover, .portfolio-btn:focus {
@@ -327,6 +399,20 @@ color: var(--tx-blue-cl);
     color: var(--tx-white-cl);
 
     cursor: pointer;
+}
+
+.cont-port {
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.portfolios {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolios>li {
+    margin: 15px;
 }
 
 .portfolio-text {
@@ -342,4 +428,7 @@ color: var(--tx-blue-cl);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
